@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pdbg"
+    tools:context=".Submitfeedback">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30ffffff"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/baseline_feedback_24"
+        android:drawablePadding="18dp"
+        android:padding="20dp"
+        android:text="Submit Feedback"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="316dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:padding="8dp"
+        android:background="#30ffffff"
+        android:hint="Your Name"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/text"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="45dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="316dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:background="#30ffffff"
+        android:hint="Hostel Name, Room Number"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/editTextTextPersonName"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="316dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:padding="8dp"
+        android:background="#30ffffff"
+        android:hint="How quickly is your problem fixed ?"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="45dp"
+        android:layout_below="@+id/editTextTextPersonName2"/>
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="316dp"
+        android:layout_height="68dp"
+        android:padding="8dp"
+        android:background="#30ffffff"
+        android:hint="Did you receive a response to your complaint in a timely manner ?"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/editTextTextPersonName3"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="316dp"
+        android:layout_height="68dp"
+        android:padding="8dp"
+        android:background="#30ffffff"
+        android:hint="Was your complaint resolved to your satisfaction?"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/editTextTextPersonName4"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="45dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Overall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextPersonName5"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="6dp"
+        android:text="Overall Rating with your experience"
+        android:textColor="@color/lavender"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rb"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Overall"
+        android:layout_centerVertical="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="10dp">
+    </RatingBar>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:layout_marginTop="10dp">
+
+    </Button>
+</RelativeLayout>

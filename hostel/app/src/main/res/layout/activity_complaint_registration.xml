@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pdbg">
+    <TextView
+        android:id="@+id/Registertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:text="Complaint Registration"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/baseline_app_registration_24"
+        android:drawablePadding="18dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/select"
+        android:paddingTop="100dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/floorblock"
+        android:paddingTop="200dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:id="@+id/RoomNumber"
+        android:layout_marginTop="310dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:hint="Your Room Number"
+        android:background="#30ffffff"
+        android:textColor="@color/black"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp"
+        android:hint="@string/issuelist"
+        android:paddingTop="370dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:layout_width="378dp"
+        android:layout_height="53dp"
+        android:id="@+id/otherissue"
+        android:layout_marginTop="480dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:hint="If you select other issues please mention it here!! or If you select electrical malfunctioning mention your problem!!"
+        android:background="#30ffffff"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="378dp"
+        android:layout_height="53dp"
+        android:id="@+id/resiregno"
+        android:layout_below="@+id/otherissue"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:hint="Your Register Number"
+        android:background="#30ffffff"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resiregno"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:layout_marginTop="10dp">
+
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pdbg"
+    tools:context=".profile">
+    <TextView
+        android:id="@+id/Registertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:text="Your Profile"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="18dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/regcomp"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/profiledappa"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        tools:ignore="InvalidId">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/complaintreg"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="cursive"
+            android:text="Hello!!"
+            android:textColor="@color/grey"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/complaintreg1"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="cursive"
+
+            android:textColor="@color/grey"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/white"
+            android:foregroundGravity="center"
+            android:padding="15dp"
+            android:src="@drawable/baseline_account_circle_24">
+        </ImageView>
+
+    </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/userofficialname"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            android:hint="Loading.."
+            android:background="@drawable/profilepagedappa"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/usermailid"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            android:hint="Loading.."
+            android:background="@drawable/profilepagedappa"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/userregisternumber"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            android:hint="Loading.."
+            android:background="@drawable/profilepagedappa"
+            android:drawableLeft="@drawable/baseline_dialpad_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/usermobilenumber"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            android:hint="Loading.."
+            android:background="@drawable/profilepagedappa"
+            android:drawableLeft="@drawable/baseline_call_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/userlogout"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            android:text="Log out"
+            android:textStyle="bold"
+            android:background="@drawable/profilepagedappa"
+            android:drawableStart="@drawable/baseline_logout_24"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
